@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP16.WelcomePage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout BackgroundColor="LightGray">
+                <Label Text="¡Bienvenido! Administrador" 
+           FontAttributes="Bold" 
+           FontSize="36"
+           TextColor="Black"
+          VerticalTextAlignment="Center" 
+           HorizontalTextAlignment="Center" />
+
+                <StackLayout BackgroundColor="LightGray">
+                    <Image Source="https://advisertecnology.com/wp-content/uploads/2021/08/portadajpv.png" Aspect="Fill"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                    <Button Text="Operaciones" TextColor="Black"
+                    HorizontalOptions="Center"
+                    BackgroundColor="GreenYellow"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    BorderWidth="2"
+                    BorderColor="LightYellow"
+                    CornerRadius="25"
+                    x:Name="btncrud"
+                    Clicked="btncrud_Clicked"/>
+
+                    <Button Text="Salir" TextColor="White"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Red"
+                    WidthRequest="150"
+                    HeightRequest="50"
+                    BorderWidth="2"
+                    BorderColor="LightYellow"
+                    CornerRadius="25" 
+                    x:Name="Salir"   
+                    Clicked="Salir_Clicked"
+                            />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
